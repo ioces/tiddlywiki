@@ -7,13 +7,13 @@ This is a simple, flexible Docker image for hosting a TiddlyWiki using Node.js. 
 To initialise a new wiki using a local folder (`~/my_wiki`) as a volume for configuration and all Tiddlers:
 
 ```bash
-$ docker run -v ~/my_wiki:/wiki ioces/tiddlywiki:latest /wiki --init server
+$ docker run -v ~/my_wiki:/wiki ioces/tiddlywiki /wiki --init server
 ```
 
 To serve the same wiki on port 80 locally:
 
 ```bash
-$ docker run --init -v ~/my_wiki:/wiki -p 127.0.0.1:80:8080 ioces/tiddlywiki:latest /wiki --listen host=0.0.0.0
+$ docker run --init -v ~/my_wiki:/wiki -p 127.0.0.1:80:8080 ioces/tiddlywiki /wiki --listen host=0.0.0.0
 ```
 
 Obviously more complicated setups can be configured using `docker-compose`.
