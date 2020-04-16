@@ -1,10 +1,10 @@
 # Containerised TiddlyWiki
 
-This is a simple, flexible Docker image for hosting a TiddlyWiki using Node.js. It leaves much of how things should be run up to the end user.
+This is a simple, flexible Docker image for hosting a [TiddlyWiki](https://tiddlywiki.com/) using Node.js. It leaves much of how things should be run up to the end user.
 
 ## Usage
 
-To initialise a new wiki using a local folder (`~/my_wiki`) as a volume for configuration and all Tiddlers:
+To initialise a new wiki using a local folder (`~/my_wiki`) as a volume for configuration and all tiddlers:
 
 ```bash
 $ docker run -v ~/my_wiki:/wiki ioces/tiddlywiki /wiki --init server
