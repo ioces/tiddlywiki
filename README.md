@@ -13,7 +13,7 @@ $ docker run -v ~/my_wiki:/wiki ioces/tiddlywiki:latest /wiki --init server
 To serve the same wiki on port 80 locally:
 
 ```bash
-$ docker run --name tiddlywiki --init -v ~/my_wiki:/wiki -p 127.0.0.1:80:8080 ioces/tiddlywiki:latest /wiki --listen host=0.0.0.0
+$ docker run --init -v ~/my_wiki:/wiki -p 127.0.0.1:80:8080 ioces/tiddlywiki:latest /wiki --listen host=0.0.0.0
 ```
 
 Obviously more complicated setups can be configured using `docker-compose`.
